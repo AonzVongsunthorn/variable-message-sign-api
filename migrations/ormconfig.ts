@@ -10,8 +10,7 @@ dotenv.config({
   path: `.env`,
 });
 
-let dataSource: DataSource;
-dataSource = new DataSource({
+const dataSource = new DataSource({
   host: process.env[DB_HOST_CONF],
   type: <DatabaseTypes>process.env[DB_TYPE_CONF],
   port: +process.env[DB_PORT_CONF],

@@ -21,8 +21,7 @@ export const USER_SERVICE_PROVIDER = 'User';
 export const AUTH_SERVICE_PROVIDER = 'Auth';
 
 // #region table
-export const USERS_TABLE = 'users';
-export const USER_USAGE_LOGS_TABLE = 'user_usage_logs';
+export const STATIONS_TABLE = 'stations';
 // #endregion table
 
 // #region general

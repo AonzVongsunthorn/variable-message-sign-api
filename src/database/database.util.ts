@@ -2,6 +2,7 @@ import { TypeOrmModuleOptions } from '@nestjs/typeorm';
 import { SnakeNamingStrategy } from 'typeorm-naming-strategies';
 import ormConfig = require('../../migrations/ormconfig');
 import { DatabaseTypes } from '@/constants';
+import { Station } from '@/entities/station.entity';
 
 export function generateTypeOrmModuleOptions(
   type: DatabaseTypes,
@@ -20,7 +21,9 @@ export function generateTypeOrmModuleOptions(
     username,
     password,
     database,
-    entities: [],
+    entities: [
+      Station
+    ],
     logging,
     synchronize: false,
     namingStrategy: new SnakeNamingStrategy(),
